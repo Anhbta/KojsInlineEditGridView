@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div>
+    <h3>A gridview control</h3>
+
+    <div data-bind="with: gridView" id="divGridView">
+        <div data-bind="if: (listDataItems() != null && listDataItems().length !== 0)" class="dataTables_wrapper">
+            @*title bar*@
+            @Html.Partial("_GridHeader")
+
+            <div class="dataTables_scrollBody">
+                <table class="dataTable display">
+                    <thead>
+                        <tr>
+                            <th class="left help-nowrap sorting">User Id</th>
+                            <th class="left help-nowrap">User Name</th>
+                            <th class="left">Date of Birth</th>
+                            <th class="left">Phone</th>
+                            <th class="left">Email</th>
+                            <th class="left">Marrital Status</th>
+                            <th class="left">Address</th>
+                        </tr>
+                    </thead>
+                    <tbody data-bind="foreach: listDataItems">
+                        <tr data-bind="css: { even: $index()%2 === 0, odd: $index()%2 !== 0},
+                                       click: $parent.selectRow.bind($data, $index())" class="odd">
+                            <td>
+                                <label data-bind="text: $data.UserId" class="ui-capitalize"></label>
+                            </td>
+                            <td>
+                                <label data-bind="text: $data.UserName" class="ui-capitalize"></label>
+                            </td>
+                            <td>
+                                <label data-bind="text: $data.DateOfBirth" class="ui-capitalize"></label>
+                            </td>
+                            <td>
+                                <label data-bind="text: $data.PhoneNumber" class="ui-capitalize"></label>
+                            </td>
+                            <td>
+                                <label data-bind="text: $data.Email" class="ui-capitalize"></label>
+                            </td>
+                            <td>
+                                <label data-bind="text: $data.MarritalStatus" class="ui-capitalize"></label>
+                            </td>
+                            <td>
+                                <label data-bind="text: $data.Address" class="ui-capitalize"></label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            @Html.Partial("_GridFooter")
+        </div>
+    </div>
+</div>
+
+
+@Scripts.Render("~/bundles/appjs")
+
+
+                

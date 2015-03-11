@@ -1,0 +1,10 @@
+﻿
+
+<div class="pull-left">Total <span data-bind="text:totalRecords()"></span> entries</div>
+<div class="pull-right dataTables_paginate paging_simple_numbers">
+    <a class="paginate_button previous" data-bind="css:{disabled : currentPageIndex() === 1}, click:prevPage()">Previous</a>
+    <span data-bind="foreach: new Array(totalPages())">
+        <a data-bind="text: $index() + 1, css:{current : $parent.currentPageIndex() === $index()+1}, click:$parent.enterPage.bind($data,$index()+1)" class="paginate_button"></a>
+    </span>
+    <a class="paginate_button next" data-bind="css:{disabled : currentPageIndex() === totalPages()}, click:nextPage()">Next</a>
+</div>
