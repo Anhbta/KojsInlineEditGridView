@@ -15,8 +15,8 @@
                 <table class="dataTable display">
                     <thead>
                         <tr>
-                            <th class="left help-nowrap sorting">User Id</th>
-                            <th class="left help-nowrap">User Name</th>
+                            <th class="left help-nowrap" data-bind="click:sortBy.bind($data,'UserId'), css:sortCss('UserId', $data.sortExpression(), $data.sortOrder())">User Id</th>
+                            <th class="left help-nowrap" data-bind="click:sortBy.bind($data,'UserName'), css:sortCss('UserName', $data.sortExpression(), $data.sortOrder())">User Name</th>
                             <th class="left">Date of Birth</th>
                             <th class="left">Phone</th>
                             <th class="left">Email</th>
