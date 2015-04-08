@@ -180,7 +180,7 @@
             self.listDataItems.push(data);
         }
 
-        self.onAfterDelete = null;
+        self.onDelete = null;
 
         self.deleteItem = function (item) {
             self.listDataItems.remove(item);
@@ -190,8 +190,8 @@
                 self.selectedRowIndex(index);
             }
 
-            if (self.onAfterDelete != null)
-                self.onAfterDelete();
+            if (self.onDelete != null)
+                self.onDelete(item);
         }
 
         //search function

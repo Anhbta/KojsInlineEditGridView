@@ -12,7 +12,12 @@ namespace KojsInlineEditGridview
                         "~/Scripts/jquery-1.10.2.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/knockoutjs").Include(
-                        "~/Scripts/knockout-3.3.0.js"));
+                        "~/Scripts/knockout-3.3.0.js",
+                        "~/Scripts/knockout.mapping.js",
+                        "~/Scripts/boostrap.tooltip.js",
+                        "~/Scripts/bootstrap-datepicker.js",
+                        "~/Scripts/Common/app.CustomBinding.js", 
+                        "~/Scripts/knockout.validation.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
@@ -25,6 +30,10 @@ namespace KojsInlineEditGridview
             bundles.Add(new ScriptBundle("~/bundles/appjs").Include(
                         "~/Scripts/Common/app.GridViewModel.js",
                         "~/Scripts/App/app.HomePage.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/editgridjs").Include(
+                        "~/Scripts/Common/app.GridViewModel.js",
+                        "~/Scripts/App/app.EditGrid.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",

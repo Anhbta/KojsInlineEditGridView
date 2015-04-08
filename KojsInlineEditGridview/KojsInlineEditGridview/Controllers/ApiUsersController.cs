@@ -40,7 +40,7 @@ namespace KojsInlineEditGridview.Controllers
                 new User{ UserId = "GIPERTI", UserName = "Tommy Cruze", DateOfBirth="24/12/1989",Address="222 Thomson Street, Vietnam", Email="xxx@gmail.com", MarritalStatus="Married", PhoneNumber="(012) 8999-999" },
                 new User{ UserId = "HIPERTI", UserName = "Gabor Wzerw", DateOfBirth="24/12/1989",Address="123 Dawson Street, USA", Email="xxx@gmail.com", MarritalStatus="Married", PhoneNumber="(012) 8999-999" },
                 new User{ UserId = "IIPERTI", UserName = "Gabriel Amzi", DateOfBirth="24/12/1989",Address="555 Normanton, Singapore", Email="xxx@gmail.com", MarritalStatus="Married", PhoneNumber="(012) 8999-999" },
-                new User{ UserId = "JPERTI", UserName = "Gaetan Cruze", DateOfBirth="24/12/1989",Address="145 Orchard Street, Singapore", Email="xxx@gmail.com", MarritalStatus="Married", PhoneNumber="(012) 8999-999" },
+                new User{ UserId = "JPERTIP", UserName = "Gaetan Cruze", DateOfBirth="24/12/1989",Address="145 Orchard Street, Singapore", Email="xxx@gmail.com", MarritalStatus="Married", PhoneNumber="(012) 8999-999" },
                 new User{ UserId = "KIPERTI", UserName = "Jabez Cruze", DateOfBirth="24/12/1989",Address="222 Thomson Street, Vietnam", Email="xxx@gmail.com", MarritalStatus="Married", PhoneNumber="(012) 8999-999" },
                 new User{ UserId = "LIPERTI", UserName = "Jac Wzerw", DateOfBirth="24/12/1989",Address="123 Dawson Street, USA", Email="xxx@gmail.com", MarritalStatus="Married", PhoneNumber="(012) 8999-999" },
                 new User{ UserId = "NIPERTI", UserName = "Jacinta Amzi", DateOfBirth="24/12/1989",Address="555 Normanton, Singapore", Email="xxx@gmail.com", MarritalStatus="Married", PhoneNumber="(012) 8999-999" },

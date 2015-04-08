@@ -12,5 +12,9 @@ namespace KojsInlineEditGridview.Controllers
         {
             return View();
         }
+
+        public ActionResult EditGrid(){
+            return View();
+        }
     }
 }

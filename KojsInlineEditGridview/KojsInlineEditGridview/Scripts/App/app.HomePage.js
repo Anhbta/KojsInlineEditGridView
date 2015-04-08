@@ -5,7 +5,7 @@
 
         self.gridView = new app.GridViewModel({
             Criteria: { PageSize: 10, PageIndex: 1, SortExpression: "", SortDirection: "" },
-            DataSourceUrl: 'api/ApiUsers/GetUsers',
+            DataSourceUrl: '/api/ApiUsers/GetUsers',
             InlineEdit: true
         });
 
